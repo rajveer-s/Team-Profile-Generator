@@ -153,3 +153,41 @@ function init() {
       })
 
   }
+// Intern create function 
+  function internCreate() {
+    inquirer.prompt([{
+      name: 'name',
+      message: 'what is your Name ?',
+    },
+    {
+      name: 'email',
+      message: 'what is your email ?',
+      default: () => { },
+      validate: function (email) {
+
+        const valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+
+        if (valid) {
+          return true;
+        } else {
+          console.log(".  Please enter a valid email")
+          return false;
+        }
+      }
+    },
+    {
+      name: 'id',
+      message: 'what is your id ?',
+    },
+    {
+      name: 'school',
+      message: 'what is your School Name ?',
+    },
+    ])
+      .then(({ name, id, email, school }) => {
+        const intern = new Intern(name, id, email, school)
+        teamMemberHtmlArr.push(generateInternCard(intern))
+        mainMenu()
+      });
+  }
+
