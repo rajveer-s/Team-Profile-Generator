@@ -33,3 +33,22 @@ const generateInternCard = (intern) => {
       </div>
   `
 }
+
+// Engineer card to display in html 
+const generateEngineerCard = (engineer) => {
+  return `
+      <div class="card">
+        <h3>${engineer.getName().toUpperCase()}</h3>
+        <p><i class="fa-solid fa-glasses"></i>${engineer.getRole()}</p>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: ${engineer.getId()}</li>
+            <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail().toLowerCase()}">${engineer.getEmail().toLowerCase()}</a>
+            </li>
+            <li class="list-group-item">Github: <a href="http://www.github.com/${engineer.getGithub()}" target="_blank"
+                rel="noopener noreferrer">Github</a> </li>
+          </ul>
+        </div>
+      </div>
+  `
+}
