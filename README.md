@@ -13,8 +13,10 @@
   - [Technologies Used](#technologies-used)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Acceptance Criteria](#acceptance-criteria)
   - [Video](#video)
+  - [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+
 - [Questions?](#questions)
 
 ## Technologies Used:
