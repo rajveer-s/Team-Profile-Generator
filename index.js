@@ -190,4 +190,13 @@ function init() {
         mainMenu()
       });
   }
+// if the user is done adding emplyees this functions generates an html file 
+  function generateFile() {
+    fs.writeFile("./dist/index.html", baseHtml(teamMemberHtmlArr), (error) => {
+      error ? console.log(error) : console.log("file created!")
+    })
+  }
+  managerCreate();
 
+}
+init();
