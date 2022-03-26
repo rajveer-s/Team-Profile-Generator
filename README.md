@@ -6,7 +6,7 @@
 ---
 
 ## Description
-### I have built a Node.js application thst takes in information about employees on a software engineering team. Once all the questions have been answered the application then generates an HTML webpage that displays summaries for each employee.
+#### A Node.js application that takes in information about employees on a software engineering team. Once all the questions have been answered the application then generates an HTML webpage that displays summaries for each employee.
 
 ## Table of Contents:
   - [Description](#description)
