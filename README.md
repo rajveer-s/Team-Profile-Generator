@@ -14,8 +14,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Acceptance Criteria](#acceptance-criteria)
-  - [How to](#video)
-  - [Tests](#tests)
+  - [Video](#video)
 - [Questions?](#questions)
 
 ## Technologies Used:
