@@ -55,7 +55,7 @@ function init() {
         if (valid) {
           return true;
         } else {
-         
+
           return "Please enter a valid email";
         }
       }
@@ -94,4 +94,25 @@ function init() {
         teamMemberHtmlArr.push(generateManagerCard(manager))
         mainMenu()
       })
+  }
+  //if there is no more employees create the html file if not run the engineer or intern function
+  function mainMenu() {
+    inquirer.prompt([{
+      type: 'list',
+      name: 'addedRole',
+      message: 'who would you like to add next ?',
+      choices: ['Engineer', 'Intern', "No, I'm done"]
+    },
+    ])
+      .then(answers => {
+        switch (answers.addedRole) {
+          case "Engineer":
+            return engineerCreate();
+          case "Intern":
+            return internCreate();
+          default:
+            return generateFile();
+        }
+      })
+
   }
