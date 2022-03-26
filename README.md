@@ -42,6 +42,7 @@ node index.js
 ---
 ## Video: 
 
+https://user-images.githubusercontent.com/61525848/160222211-79cd32d4-d215-4dbd-93c7-9e1d191433ab.mp4
 
 
 ## User Story:
