@@ -138,3 +138,11 @@ p i {
 </body>
 
 </html>`
+
+
+module.exports = {
+  generateEngineerCard,
+  generateManagerCard,
+  generateInternCard,
+  baseHtml
+}
