@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,99 +11,91 @@
   <script src="https://kit.fontawesome.com/f5f4ff2f36.js" crossorigin="anonymous"></script>
   <title>Team Profile Generator</title>
   <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body a{
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 64, 64);
+  color: #fff;
+  height: 20vh;
+}
+.heading{
+  font-size: 2rem;
+  font-weight: 700;
+}
+#container{
+  display: flex;
+}
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem;
+  flex-wrap: wrap;  
+}
+.card{
+  height: 24rem;
+  width: 18rem;
+  margin: 2rem;
+}
+h3{
+  background-color: cornflowerblue;
+  padding: 0 1.4rem;
+  margin: 0;
+  font-size: 35px;
+}
+p {
+  background-color: cornflowerblue;
+  font-size: 28px;
+  padding: .4rem 1rem;
+}
 
-    body a {
-      outline: none;
-      text-decoration: none;
-      list-style: none;
-    }
-
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(185, 64, 64);
-      color: #fff;
-      height: 20vh;
-    }
-
-    .heading {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-
-    #container {
-      display: flex;
-    }
-
-    .card-deck {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 5rem;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      height: 24rem;
-      width: 18rem;
-      margin: 2rem;
-    }
-
-    h3 {
-      background-color: cornflowerblue;
-      padding: 0 1.4rem;
-      margin: 0;
-      font-size: 35px;
-    }
-
-    p {
-      background-color: cornflowerblue;
-      font-size: 28px;
-      padding: .4rem 1rem;
-    }
-
-    p i {
-      padding-right: .9rem;
-      font-size: 2rem;
-    }
-  </style>
+p i {
+  padding-right: .9rem;
+  font-size: 2rem;
+}
+</style>
 
 </head>
 
 <body>
   <header>
     <div class="jumbotron jumbotron-fluid">
-      <h1 class="display-4 heading">My Team</h1>
+        <h1 class="display-4 heading">My Team</h1>
     </div>
   </header>
   <div id="container">
     <div class="card-deck">
-
+        
       <div class="card">
-        <h3>RAJ</h3>
+        <h3>RAJVEER</h3>
         <p><i class="fa-solid fa-mug-hot"></i>Manager</p>
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">ID: 12</li>
-            <li class="list-group-item">Email: <a href="mailto:rajsidhu2924@gmail.com">rajsidhu2924@gmail.com</a>
+            <li class="list-group-item">ID: 1</li>
+            <li class="list-group-item">Email: <a href="mailto:raj@raj.com">raj@raj.com</a>
             </li>
-            <li class="list-group-item">Phone: 8189471231</li>
+            <li class="list-group-item">Phone: 818392712</li>
           </ul>
         </div>
       </div>
-
+   
       <div class="card">
         <h3>JAMES</h3>
         <p><i class="fa-solid fa-glasses"></i>Engineer</p>
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">ID: 13</li>
+            <li class="list-group-item">ID: 2</li>
             <li class="list-group-item">Email: <a href="mailto:james@james.com">james@james.com</a>
             </li>
             <li class="list-group-item">Github: <a href="http://www.github.com/rajveer-s" target="_blank"
@@ -110,20 +103,20 @@
           </ul>
         </div>
       </div>
-
+   
       <div class="card">
         <h3>JOE</h3>
         <p><i class="fa-solid fa-user-graduate"></i>Intern</p>
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">ID: 14</li>
+            <li class="list-group-item">ID: 3</li>
             <li class="list-group-item">Email: <a href="mailto:joe@joe.com">joe@joe.com</a>
             </li>
-            <li class="list-group-item">School: Joe Ins.</li>
+            <li class="list-group-item">School: Joe inc.</li>
           </ul>
         </div>
       </div>
-
+  
     </div>
   </div>
 </body>
