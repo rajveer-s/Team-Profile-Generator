@@ -114,5 +114,42 @@ function init() {
             return generateFile();
         }
       })
+  }
+  // engineer create function 
+  function engineerCreate() {
+    inquirer.prompt([{
+      name: 'name',
+      message: 'What is Enginners Name ?',
+    },
+    {
+      name: 'email',
+      message: 'What is your email ?',
+      default: () => { },
+      validate: function (email) {
+
+        const valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+
+        if (valid) {
+          return true;
+        } else {
+          console.log(".  Please enter a valid email")
+          return false;
+        }
+      }
+    },
+    {
+      name: 'id',
+      message: 'What is your id ?',
+    },
+    {
+      name: 'github',
+      message: 'What is your github Username ?',
+    },
+    ])
+      .then(({ name, id, email, github }) => {
+        const engineer = new Engineer(name, id, email, github)
+        teamMemberHtmlArr.push(generateEngineerCard(engineer))
+        mainMenu()
+      })
 
   }
