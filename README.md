@@ -24,6 +24,7 @@
 - NODEJS 
 - HTML 
 - CSS 
+- BOOTSTRAP
 
 ## Installation:
 ### After you have cloned the repository, make sure to run the command line below to get all the dependencies:
