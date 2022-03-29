@@ -13,6 +13,8 @@
   - [Technologies Used](#technologies-used)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Github Link](#links)
+  - [Video Link](#links)
   - [Video](#video)
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
@@ -40,6 +42,13 @@ npm i
 node index.js
 ```
 ---
+## Links:
+
+- [Github Link](https://github.com/rajveer-s/Team-Profile-Generator)
+- [Video Link](https://www.awesomescreenshot.com/video/8110324?key=4a27258fda11715f4c9b79259fd1b15a)
+
+---
+
 ## Video: 
 
 https://user-images.githubusercontent.com/61525848/160222211-79cd32d4-d215-4dbd-93c7-9e1d191433ab.mp4
