@@ -95,7 +95,7 @@ function init() {
         mainMenu()
       })
   }
-  //if there is no more employees create the html file if not run the engineer or intern function
+  //if there is no more employees, create the html file. if not run the engineer or intern function.
   function mainMenu() {
     inquirer.prompt([{
       type: 'list',

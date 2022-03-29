@@ -1,4 +1,4 @@
-// creatinf manager card to display in html 
+// creating manager card to display in html 
 const generateManagerCard = (manager) => {
   return `
       <div class="card">
@@ -46,14 +46,14 @@ const generateEngineerCard = (engineer) => {
             <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail().toLowerCase()}">${engineer.getEmail().toLowerCase()}</a>
             </li>
             <li class="list-group-item">Github: <a href="http://www.github.com/${engineer.getGithub()}" target="_blank"
-                rel="noopener noreferrer">Github</a> </li>
+                rel="noopener noreferrer">${engineer.getGithub()}</a> </li>
           </ul>
         </div>
       </div>
   `
 }
 
-// html to display the info ojn the page                 
+// html to display the info on the page                 
 const baseHtml = (htmlArr) => `
 <!DOCTYPE html>
 <html lang="en">
